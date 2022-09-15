@@ -12,15 +12,16 @@
     "ffmpeg-static": "^4.3.0",
     "fluent-ffmpeg": "^2.1.2",
     "node-cron": "^3.0.0",
+    "progress-stream": "^2.0.0",
     "pug": "^3.0.2",
     "simple-youtube-api": "^5.2.1",
     "ytdl": "^1.4.1",
-    "ytdl-core": "^4.11.0"
+    "ytdl-core": "^4.11.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ytdl": "ytdl https://www.youtube.com/watch?v=zHdKR-tPbaU > s.mp3",
+    "ytdl": "ytdl --print-url https://www.youtube.com/watch?v=$npm_config_yturl",
     "ffmpeg": "ffmpeg"
   },
   "author": "",
